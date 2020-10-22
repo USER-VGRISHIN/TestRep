@@ -10,8 +10,9 @@ class Triangle(object):
 
     def triangleExist(self):
 
-        if (self.A[0] == self.B[0] or self.A[0] == self.C[0] or self.B[0] == self.C[0]) and \
-                (self.A[1] == self.B[1] or self.A[1] == self.C[1] or self.B[1] == self.C[1]):
+        if (self.A[0] == self.B[0] and self.A[1] == self.B[1]) or \
+                (self.B[0] == self.C[0] and self.B[1] == self.C[1]) or \
+                (self.A[0] == self.C[0] and self.A[1] == self.C[1]):
             return False
         else:
             return True

@@ -1,7 +1,7 @@
 from Triangle import  Triangle
 
 def test_tiangle_exist_positive_points():
-    t = Triangle(1, 2, 2, 7, 4, 16)
+    t = Triangle(1, 1, 1, 5, 5, 1)
     result = t.triangleExist()
     assert result == True
 
